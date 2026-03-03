@@ -1,7 +1,11 @@
 .venv/
+__pycache__/
 h5_storage/
 h5_unseen/
+h5_unseen2/
 data/
 checkpoints/
-__pycache__/
+*.jpg
+*.png
+*.h5
 *.pkl

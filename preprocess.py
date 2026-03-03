@@ -98,8 +98,10 @@ def process_and_save_h5(file_label_pairs, patch_num, N, save_interval, joblib_ba
 
 # --- Configuration for your AI_Detector Manual Uploads ---
 load = False
-class1_dirs = ["./data/real/"] # Manually put Real images here (Label 0)
-class2_dirs = ["./data/ai/"]   # Manually put AI images here (Label 1)
+class1_dirs = ["./data/real4/"] # Manually put Real images here (Label 0)
+class2_dirs = ["./data/ai4/"]   # Manually put AI images here (Label 1)
+##class1_dirs = ["./data/real/"] # Manually put Real images here (Label 0)
+##class2_dirs = ["./data/ai/"]   # Manually put AI images here (Label 1)
 
 output_dir = "./h5_storage"
 file_paths_pickle_save_dir = './aigc_multimodal_paths.pkl'

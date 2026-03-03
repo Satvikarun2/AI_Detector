@@ -11,8 +11,8 @@ from models import TextureContrastClassifier
 def test_on_unseen():
     # --- Configuration ---
     # Path to the NEW H5 folder created by preprocess2.py
-    TEST_H5_DIR = './h5_unseen'  
-    MODEL_PATH = './checkpoints/best_model.pth' # Using Epoch 77 best model
+    TEST_H5_DIR = './h5_unseen2'  
+    MODEL_PATH = './checkpoints/best_model.pth' 
     
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
@@ -28,7 +28,7 @@ def test_on_unseen():
     # 2. Load the Best Model
     model = TextureContrastClassifier().to(device)
     if os.path.exists(MODEL_PATH):
-        print(f"✅ Loading Best Model weights (Epoch 77) from {MODEL_PATH}")
+        print(f"✅ Loading Best Model weights (100th Epoch) from {MODEL_PATH}")
         model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
         model.eval() 
     else:
