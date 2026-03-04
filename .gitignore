@@ -13,3 +13,20 @@ checkpoints/
 checkpoints/
 __pycache__/
 *.pth
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+llmreasoning/
+
+# PyTorch checkpoints (optional)
+*.pth
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
