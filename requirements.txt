@@ -7,3 +7,4 @@ joblib
 gradio
 tqdm
 scikit-learn
+google-generativeai

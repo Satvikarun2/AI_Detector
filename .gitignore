@@ -9,3 +9,9 @@ checkpoints/
 *.png
 *.h5
 *.pkl
+
+#create this file which includes your "GEMINI KEY"
+api_secrets.py
+
+# Temporary AI Image folders
+temp_forensics/
